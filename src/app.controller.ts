@@ -11,4 +11,8 @@ export class AppController {
     console.log(typeof json);
     return json;
   }
+  @Get("/")
+  onMainPage() {
+    return JSON.stringify({ hello: "Hello" });
+  }
 }
